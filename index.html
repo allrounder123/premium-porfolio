@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shanza Bukhari — Software Engineering Student, Web Developer, Python Developer & Future Tech Entrepreneur. Premium portfolio showcasing projects, skills, and experience.">
+  <meta name="keywords" content="Shanza Bukhari, Software Engineer, Web Developer, Python, Portfolio">
+  <meta name="author" content="Shanza Bukhari">
+  <title>Shanza Bukhari | Software Engineer & Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader" class="loader">
+    <div class="loader-content">
+      <div class="loader-logo">SB</div>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+      <p class="loader-text">Loading Experience...</p>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Mouse Follow Gradient -->
+  <div class="mouse-gradient" id="mouseGradient"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- Floating Social Icons -->
+  <div class="floating-social">
+    <a href="https://github.com/allrounder123" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/shanza-bukhari-aa29502a4/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="mailto:allrounder123.40@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="images/SHANZA BUKHARI.png" alt="Shanza Bukhari Logo">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-title">Shanza Bukhari</h1>
+        <div class="typewriter-wrapper">
+          <span class="typewriter" id="typewriter"></span>
+          <span class="typewriter-cursor">|</span>
+        </div>
+        <p class="hero-description">
+          Passionate about building innovative software solutions that make a real impact.
+          Turning ideas into elegant, efficient code.
+        </p>
+        <div class="hero-buttons">
+          <a href="#resume" class="btn btn-primary">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <a href="#projects" class="btn btn-secondary">
+            <i class="fas fa-folder-open"></i> View Projects
+          </a>
+        </div>
+      </div>
+      <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+        <div class="hero-image-glow"></div>
+        <img src="images/shanza_image.png" alt="Shanza Bukhari" class="floating-image">
+        <div class="hero-badge hero-badge-1"><i class="fas fa-code"></i> Developer</div>
+        <div class="hero-badge hero-badge-2"><i class="fas fa-rocket"></i> Innovator</div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <i class="fas fa-arrow-down" aria-hidden="true"></i>
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Crafting Digital Excellence</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card" data-aos="fade-right">
+          <p class="about-intro">
+            I'm <strong>Shanza Bukhari</strong>, a Software Engineering student passionate about developing
+            efficient and innovative software solutions. Skilled in C++, Python, and web development,
+            I focus on building practical projects that solve real-world problems.
+          </p>
+          <div class="about-details">
+            <div class="about-detail">
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <h4>Education</h4>
+                <p>Software Engineering Student</p>
+              </div>
+            </div>
+            <div class="about-detail">
+              <i class="fas fa-bullseye"></i>
+              <div>
+                <h4>Career Goals</h4>
+                <p>Future Tech Entrepreneur & Full-Stack Developer</p>
+              </div>
+            </div>
+            <div class="about-detail">
+              <i class="fas fa-lightbulb"></i>
+              <div>
+                <h4>Passion</h4>
+                <p>Continuous learning & meaningful technology impact</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stats-grid" data-aos="fade-left">
+          <div class="stat-card glass-card">
+            <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+            <span class="stat-number" data-target="11">0</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+            <span class="stat-number" data-target="5">0</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-icon"><i class="fas fa-microchip"></i></div>
+            <span class="stat-number" data-target="9">0</span>
+            <span class="stat-label">Technologies Learned</span>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-icon"><i class="fas fa-clock"></i></div>
+            <span class="stat-number" data-target="500">0</span>
+            <span class="stat-label">Learning Hours</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">My Skills</span>
+        <h2 class="section-title">Technical Expertise</h2>
+      </div>
+      <div class="skills-categories">
+        <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="100">
+          <h3><i class="fas fa-paint-brush"></i> Frontend</h3>
+          <div class="skill-item">
+            <div class="skill-info"><img src="images/html-logo.png" alt="HTML"><span>HTML</span><span>90%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><img src="images/css-logo.png" alt="CSS"><span>CSS</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><img src="images/javascript-logo.png" alt="JavaScript"><span>JavaScript</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+          </div>
+        </div>
+        <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="200">
+          <h3><i class="fas fa-server"></i> Backend & Languages</h3>
+          <div class="skill-item">
+            <div class="skill-info"><img src="images/python-logo.png" alt="Python"><span>Python</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><img src="images/cpp-logo.png" alt="C++"><span>C++</span><span>75%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><img src="images/c-logo.png" alt="C"><span>C</span><span>70%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+          </div>
+        </div>
+        <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="300">
+          <h3><i class="fas fa-database"></i> Database & Tools</h3>
+          <div class="skill-item">
+            <div class="skill-info"><img src="images/mysql-logo.png" alt="MySQL"><span>MySQL</span><span>75%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><img src="images/github-logo.png" alt="Git"><span>Git & GitHub</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      <div class="project-filters" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="ai">AI</button>
+        <button class="filter-btn" data-filter="app">Apps</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card glass-card" data-category="ai" data-aos="fade-up" data-tilt>
+          <div class="project-image" style="background: linear-gradient(135deg, #E8D5FF, #D9F7FA);">
+            <i class="fas fa-robot"></i>
+          </div>
+          <div class="project-content">
+            <h3>AI Agent Chatbot</h3>
+            <p>Interactive AI assistant built with modern technologies for intelligent conversations.</p>
+            <div class="project-tags"><span>Python</span><span>AI</span></div>
+            <div class="project-links">
+              <a href="videos/AI_agent(chatbot).mp4" target="_blank" class="project-link"><i class="fas fa-play"></i> Demo</a>
+              <a href="https://github.com/allrounder123" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card glass-card" data-category="web" data-aos="fade-up" data-aos-delay="50" data-tilt>
+          <div class="project-image" style="background: linear-gradient(135deg, #B8FFDA, #D9F7FA);">
+            <i class="fas fa-cloud-sun"></i>
+          </div>
+          <div class="project-content">
+            <h3>Weather App</h3>
+            <p>Displays real-time temperature and weather conditions with a clean interface.</p>
+            <div class="project-tags"><span>JavaScript</span><span>API</span></div>
+            <div class="project-links">
+              <a href="videos/weatherproject.mp4" target="_blank" class="project-link"><i class="fas fa-play"></i> Demo</a>
+              <a href="https://github.com/allrounder123" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card glass-card" data-category="app" data-aos="fade-up" data-aos-delay="100" data-tilt>
+          <div class="project-image" style="background: linear-gradient(135deg, #FFB6D9, #E8D5FF);">
+            <i class="fas fa-calculator"></i>
+          </div>
+          <div class="project-content">
+            <h3>Simple Calculator</h3>
+            <p>Basic calculator application with intuitive design and smooth functionality.</p>
+            <div class="project-tags"><span>JavaScript</span><span>HTML</span></div>
+            <div class="project-links">
+              <a href="videos/simple_calculator.mp4" target="_blank" class="project-link"><i class="fas fa-play"></i> Demo</a>
+              <a href="https://github.com/allrounder123" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card glass-card" data-category="app" data-aos="fade-up" data-aos-delay="150" data-tilt>
+          <div class="project-image" style="background: linear-gradient(135deg, #D9F7FA, #B8FFDA);">
+            <i class="fas fa-tasks"></i>
+          </div>
+          <div class="project-content">
+            <h3>To-Do List App</h3>
+            <p>Manages tasks and activities with add, complete, and delete functionality.</p>
+            <div class="project-tags"><span>JavaScript</span><span>CSS</span></div>
+            <div class="project-links">
+              <a href="videos/todolist.mp4" target="_blank" class="project-link"><i class="fas fa-play"></i> Demo</a>
+              <a href="https://github.com/allrounder123" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card glass-card" data-category="web" data-aos="fade-up" data-aos-delay="200" data-tilt>
+          <div class="project-image" style="background: linear-gradient(135deg, #E8D5FF, #FFB6D9);">
+            <i class="fas fa-palette"></i>
+          </div>
+          <div class="project-content">
+            <h3>Gradient Project</h3>
+            <p>Creates beautiful gradient backgrounds with interactive color controls.</p>
+            <div class="project-tags"><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links">
+              <a href="videos/gradient project.mp4" target="_blank" class="project-link"><i class="fas fa-play"></i> Demo</a>
+              <a href="https://github.com/allrounder123" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card glass-card" data-category="ai" data-aos="fade-up" data-aos-delay="250" data-tilt>
+          <div class="project-image" style="background: linear-gradient(135deg, #B8FFDA, #E8D5FF);">
+            <i class="fas fa-comments"></i>
+          </div>
+          <div class="project-content">
+            <h3>Gemini Chatbot</h3>
+            <p>Interactive AI assistant powered by Google's Gemini API.</p>
+            <div class="project-tags"><span>Python</span><span>Gemini AI</span></div>
+            <div class="project-links">
+              <a href="videos/gemini_chatbot.mp4" target="_blank" class="project-link"><i class="fas fa-play"></i> Demo</a>
+              <a href="https://github.com/allrounder123" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card glass-card" data-category="app" data-aos="fade-up" data-aos-delay="300" data-tilt>
+          <div class="project-image" style="background: linear-gradient(135deg, #FFB6D9, #D9F7FA);">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div class="project-content">
+            <h3>Digital Watch</h3>
+            <p>Displays time and date with a sleek digital watch interface.</p>
+            <div class="project-tags"><span>JavaScript</span><span>CSS</span></div>
+            <div class="project-links">
+              <a href="videos/digtalwatch.mp4" target="_blank" class="project-link"><i class="fas fa-play"></i> Demo</a>
+              <a href="https://github.com/allrounder123" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card glass-card" data-category="web" data-aos="fade-up" data-aos-delay="350" data-tilt>
+          <div class="project-image" style="background: linear-gradient(135deg, #D9F7FA, #FFB6D9);">
+            <i class="fas fa-laugh"></i>
+          </div>
+          <div class="project-content">
+            <h3>Dad Jokes Project</h3>
+            <p>Displays random dad jokes fetched from an API with fun animations.</p>
+            <div class="project-tags"><span>JavaScript</span><span>API</span></div>
+            <div class="project-links">
+              <a href="videos/dadjokes project.mp4" target="_blank" class="project-link"><i class="fas fa-play"></i> Demo</a>
+              <a href="https://github.com/allrounder123" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Placeholder projects — replace with your own -->
+         <!-- <div class="project-card glass-card project-placeholder" data-category="web" data-aos="fade-up" data-aos-delay="400" data-tilt> 
+          <div class="project-image" style="background: linear-gradient(135deg, #E8D5FF, #B8FFDA);">
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="project-content">
+            <h3>Your Project Title</h3>
+            <p>Add your project description here. Replace this placeholder with your 9th project details.</p>
+            <div class="project-tags"><span>Tech 1</span><span>Tech 2</span></div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card glass-card project-placeholder" data-category="app" data-aos="fade-up" data-aos-delay="450" data-tilt>
+          <div class="project-image" style="background: linear-gradient(135deg, #FFB6D9, #B8FFDA);">
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="project-content">
+            <h3>Your Project Title</h3>
+            <p>Add your project description here. Replace this placeholder with your 10th project details.</p>
+            <div class="project-tags"><span>Tech 1</span><span>Tech 2</span></div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card glass-card project-placeholder" data-category="ai" data-aos="fade-up" data-aos-delay="500" data-tilt>
+          <div class="project-image" style="background: linear-gradient(135deg, #D9F7FA, #E8D5FF);">
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="project-content">
+            <h3>Your Project Title</h3>
+            <p>Add your project description here. Replace this placeholder with your 11th project details.</p>
+            <div class="project-tags"><span>Tech 1</span><span>Tech 2</span></div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>  -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Journey</span>
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">Internship</span>
+            <h3>Web Development Intern</h3>
+            <h4>Arch Technologies</h4>
+            <p>Worked on full-stack development projects using various technologies and languages, gaining hands-on experience in real-world software development.</p>
+            <a href="images/arch-offer.jpeg" target="_blank" class="timeline-cert">
+              <img src="images/arch-offer.jpeg" alt="Arch Technologies Offer Letter">
+              <span><i class="fas fa-eye"></i> View Certificate</span>
+            </a>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">Internship</span>
+            <h3>Digital Marketing Intern</h3>
+            <h4>DevelopersHub</h4>
+            <p>Managed social media campaigns, branding, and digital marketing strategies for real projects, developing strong communication and marketing skills.</p>
+            <a href="images/developershub.png" target="_blank" class="timeline-cert">
+              <img src="images/developershub.png" alt="DevelopersHub Offer Letter">
+              <span><i class="fas fa-eye"></i> View Certificate</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section certifications-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Achievements</span>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+      <div class="cert-slider-wrapper" data-aos="fade-up">
+        <button class="cert-nav cert-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+        <div class="cert-slider" id="certSlider">
+          <div class="cert-card glass-card">
+            <div class="cert-glow"></div>
+            <div class="cert-icon"><i class="fas fa-award"></i></div>
+            <h3>AI Developer Certificate</h3>
+            <p>Completed comprehensive AI training program covering machine learning fundamentals.</p>
+            <a href="images/cert1.png" target="_blank" class="cert-preview-btn"><i class="fas fa-eye"></i> Preview</a>
+          </div>
+          <div class="cert-card glass-card">
+            <div class="cert-glow"></div>
+            <div class="cert-icon"><i class="fas fa-robot"></i></div>
+            <h3>Agentic AI Developer</h3>
+            <p>Advanced AI learning certification in agentic systems and autonomous AI development.</p>
+            <a href="images/cert2.png" target="_blank" class="cert-preview-btn"><i class="fas fa-eye"></i> Preview</a>
+          </div>
+          <div class="cert-card glass-card">
+            <div class="cert-glow"></div>
+            <div class="cert-icon"><i class="fas fa-brain"></i></div>
+            <h3>Agentic New AI Developer</h3>
+            <p>Advanced certification in next-generation agentic AI development practices.</p>
+            <a href="images/cert3.png" target="_blank" class="cert-preview-btn"><i class="fas fa-eye"></i> Preview</a>
+          </div>
+          <!-- Placeholder certifications — replace with your own -->
+          <!-- <div class="cert-card glass-card cert-placeholder"> 
+            <div class="cert-icon"><i class="fas fa-plus"></i></div>
+            <h3>Your Certificate Title</h3>
+            <p>Add your 4th certification description here. Replace image link below.</p>
+            <a href="#" class="cert-preview-btn"><i class="fas fa-eye"></i> Preview</a>
+          </div>
+          <div class="cert-card glass-card cert-placeholder">
+            <div class="cert-glow"></div>
+            <div class="cert-icon"><i class="fas fa-plus"></i></div>
+            <h3>Your Certificate Title</h3>
+            <p>Add your 5th certification description here. Replace image link below.</p>
+            <a href="#" class="cert-preview-btn"><i class="fas fa-eye"></i> Preview</a>
+          </div>  -->
+        </div>
+        <button class="cert-nav cert-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="cert-dots" id="certDots"></div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="section resume-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Resume</span>
+        <h2 class="section-title">Professional Profile</h2>
+      </div>
+      <div class="resume-grid" data-aos="fade-up">
+        <div class="resume-preview glass-card">
+          <div class="resume-header">
+            <div class="resume-avatar">
+              <img src="images/shanza_image.png" alt="Shanza Bukhari">
+            </div>
+            <div>
+              <h3>Shanza Bukhari</h3>
+              <p>Software Engineering Student</p>
+            </div>
+          </div>
+          <div class="resume-section-block">
+            <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+            <p>Software Engineering — Currently Enrolled</p>
+          </div>
+          <div class="resume-section-block">
+            <h4><i class="fas fa-code"></i> Core Skills</h4>
+            <div class="resume-skills">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span>
+              <span>C++</span><span>C</span><span>MySQL</span><span>Git</span>
+            </div>
+          </div>
+          <div class="resume-section-block">
+            <h4><i class="fas fa-briefcase"></i> Experience Summary</h4>
+            <p>Web Development Intern at Arch Technologies</p>
+            <p>Digital Marketing Intern at DevelopersHub</p>
+          </div>
+          <p class="resume-note"><i class="fas fa-info-circle"></i> Replace with your resume PDF — update the download link below.</p>
+        </div>
+        <div class="resume-actions">
+          <a href="#" id="resumeDownload" class="btn btn-primary btn-large">
+            <i class="fas fa-file-pdf"></i> Download Resume
+          </a>
+          <p class="resume-hint">Upload your resume PDF to the project folder and update the link in index.html</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Connect</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <p class="contact-intro">Have a project in mind or want to collaborate? I'd love to hear from you. Let's build something amazing together.</p>
+          <div class="contact-links">
+            <a href="mailto:allrounder123.40@gmail.com" class="contact-link glass-card">
+              <i class="fas fa-envelope"></i>
+              <div><span>Email</span><p>allrounder123.40@gmail.com</p></div>
+            </a>
+            <a href="https://www.linkedin.com/in/shanza-bukhari-aa29502a4/" target="_blank" class="contact-link glass-card">
+              <i class="fab fa-linkedin-in"></i>
+              <div><span>LinkedIn</span><p>Shanza Bukhari</p></div>
+            </a>
+            <a href="https://github.com/allrounder123" target="_blank" class="contact-link glass-card">
+              <i class="fab fa-github"></i>
+              <div><span>GitHub</span><p>@allrounder123</p></div>
+            </a>
+            <a href="https://wa.me/1234567890" target="_blank" class="contact-link glass-card">
+              <i class="fab fa-whatsapp"></i>
+              <div><span>WhatsApp</span><p>Send a Message</p></div>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form glass-card" id="contactForm" data-aos="fade-left">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="name">Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <label for="email">Email</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            <label for="message">Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i>
+            <p>Message sent successfully! I'll get back to you soon.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Shanza Bukhari</h3>
+          <p>Software Engineering Student & Future Tech Entrepreneur building the future, one line of code at a time.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Me</h4>
+          <div class="social-icons">
+            <a href="https://github.com/allrounder123" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/shanza-bukhari-aa29502a4/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:allrounder123.40@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Shanza Bukhari. All rights reserved.</p>
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
